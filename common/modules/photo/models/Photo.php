@@ -4,7 +4,7 @@ namespace modules\photo\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
-use modules\message\models\Messages;
+use modules\message\models\Message;
 use modules\user\models\PhotoFeedback;
 use modules\user\models\PhotoUser;
 use modules\social\models\SocialRelations;
@@ -22,7 +22,7 @@ use modules\social\models\Like;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Messages[] $messages
+ * @property Message[] $message
  * @property PhotoFeedback[] $photoFeedbacks
  * @property PhotoUser[] $photoUsers
  * @property SocialRelations[] $socialRelations
@@ -87,7 +87,7 @@ class Photo extends \yii\db\ActiveRecord
      */
     public function getMessages()
     {
-        return $this->hasMany(Messages::className(), ['idPhoto' => 'id']);
+        return $this->hasMany(Message::className(), ['idPhoto' => 'id']);
     }
 
     /**

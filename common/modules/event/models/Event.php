@@ -9,7 +9,7 @@ use modules\event\models\Attender;
 use modules\event\models\Book;
 use modules\event\models\EventGenre;
 use modules\event\models\Review;
-use modules\message\models\Messages;
+use modules\message\models\Message;
 use modules\vocabulary\models\Genre;
 use modules\social\models\SocialRelations;
 use modules\social\models\Comment;
@@ -38,7 +38,7 @@ use modules\social\models\Share;
  * @property Book[] $books
  * @property User $user
  * @property EventGenre[] $eventGenres
- * @property Messages[] $messages
+ * @property Message[] $message
  * @property Review[] $reviews
  * @property SocialRelations[] $socialRelations
  * @property Genres[] $genres
@@ -141,7 +141,7 @@ class Event extends \yii\db\ActiveRecord
      */
     public function getMessages()
     {
-        return $this->hasMany(Messages::className(), ['idEvent' => 'id']);
+        return $this->hasMany(Message::className(), ['idEvent' => 'id']);
     }
 
     /**

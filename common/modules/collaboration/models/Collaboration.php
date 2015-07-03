@@ -5,7 +5,7 @@ namespace modules\collaboration\models;
 use Yii;
 use modules\user\models\User;
 use modules\collaboration\models\CollaborationRequest;
-use modules\message\models\Messages;
+use modules\message\models\Message;
 
 /**
  * This is the model class for table "{{%collaboration}}".
@@ -21,7 +21,7 @@ use modules\message\models\Messages;
  *
  * @property User $User
  * @property CollaborationRequest[] $collaborationRequests
- * @property Messages[] $messages
+ * @property Message[] $message
  * @property CollaborationRequests[] $collaborationRequests
  * @property CollaborationUsers[] $collaborationUsers
  */
@@ -84,7 +84,7 @@ class Collaboration extends \yii\db\ActiveRecord
      */
     public function getMessages()
     {
-        return $this->hasMany(Messages::className(), ['idCollaboration' => 'id']);
+        return $this->hasMany(Message::className(), ['idCollaboration' => 'id']);
     }
 
     /**

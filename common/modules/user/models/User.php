@@ -21,7 +21,7 @@ use modules\user\models\Fan;
 use modules\user\models\Favorite;
 use modules\user\models\Feedback;
 use modules\social\models\Like;
-use modules\message\models\Messages;
+use modules\message\models\Message;
 use modules\user\models\Notification;
 use modules\payments\models\Payments;
 use modules\user\models\PhotoUser;
@@ -81,7 +81,7 @@ use modules\vocabulary\models\Genre;
  * @property Favorite[] $FollowerFavorites
  * @property Feedback[] $feedbacks
  * @property Like[] $likes
- * @property Messages[] $receiverMessages
+ * @property Message[] $receiverMessages
  * @property Messages[] $senderMessages
  * @property Notification[] $notifications
  * @property Payments[] $payments
@@ -473,7 +473,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getReceiverMessages()
     {
-        return $this->hasMany(Messages::className(), ['idUserReceiver' => 'id']);
+        return $this->hasMany(Message::className(), ['idUserReceiver' => 'id']);
     }
 
     /**
@@ -481,7 +481,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getSenderMessages()
     {
-        return $this->hasMany(Messages::className(), ['idUserSender' => 'id']);
+        return $this->hasMany(Message::className(), ['idUserSender' => 'id']);
     }
 
     /**

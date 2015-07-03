@@ -9,7 +9,7 @@ use modules\event\models\Event;
 use modules\photo\models\Photo;
 
 /**
- * This is the model class for table "{{%messages}}".
+ * This is the model class for table "{{%message}}".
  *
  * @property integer $id
  * @property integer $idUserSender
@@ -29,14 +29,14 @@ use modules\photo\models\Photo;
  * @property User $userReceiver
  * @property User $userSender
  */
-class Messages extends \yii\db\ActiveRecord
+class Message extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return '{{%messages}}';
+        return '{{%message}}';
     }
 
     /**
