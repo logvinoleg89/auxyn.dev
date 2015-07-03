@@ -36,11 +36,15 @@ use modules\social\models\Share;
  *
  * @property Attenders[] $attenders
  * @property Book[] $books
- * @property User $idUser0
+ * @property User $user
  * @property EventGenre[] $eventGenres
  * @property Messages[] $messages
  * @property Review[] $reviews
  * @property SocialRelations[] $socialRelations
+ * @property Genres[] $genres
+ * @property Comments[] $comments
+ * @property Likes[] $likes
+ * @property Shares[] $shares
  */
 class Event extends \yii\db\ActiveRecord
 {

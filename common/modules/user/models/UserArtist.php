@@ -16,8 +16,8 @@ use modules\vocabulary\models\Artist;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Artist $idArtist0
- * @property User $idUser0
+ * @property Artist $artist
+ * @property User $user
  */
 class UserArtist extends \yii\db\ActiveRecord
 {

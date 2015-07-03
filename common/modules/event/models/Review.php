@@ -16,9 +16,9 @@ use modules\event\models\Event;
  * @property string $text
  * @property integer $ratingAmount
  *
- * @property Event $idEvent0
- * @property User $idUserReviewer0
- * @property User $idUserReviewing0
+ * @property Event $event
+ * @property User $userReviewer
+ * @property User $userReviewing
  */
 class Review extends \yii\db\ActiveRecord
 {

@@ -16,8 +16,8 @@ use modules\vocabulary\models\Genre;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Genre $idGenre0
- * @property User $idUser0
+ * @property Genre $genre
+ * @property User $user
  */
 class UserGenre extends \yii\db\ActiveRecord
 {

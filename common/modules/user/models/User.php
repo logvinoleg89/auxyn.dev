@@ -4,7 +4,6 @@ namespace modules\user\models;
 
 use Yii;
 use yii\base\NotSupportedException;
-use yii\behaviors\AttributeBehavior;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
@@ -102,6 +101,10 @@ use modules\vocabulary\models\Genre;
  * @property UserArtist[] $userArtists
  * @property UserGenre[] $userGenres
  * @property UserReceivers[] $userReceivers
+ * @property Artist[] $artist
+ * @property IncomingPyments[] $incomingPyments
+ * @property Genres[] $genres
+ * @property Photos[] $photos
  */
 class User extends ActiveRecord implements IdentityInterface
 {
@@ -636,7 +639,7 @@ class User extends ActiveRecord implements IdentityInterface
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getArtist()
+    public function getArtists()
     {
         return $this->hasMany(Artist::className(), ['id' => 'idArtist'])->via('userArtists');
     }

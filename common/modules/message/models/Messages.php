@@ -23,11 +23,11 @@ use modules\photo\models\Photo;
  * @property string $text
  * @property string $location
  *
- * @property Photo $idPhoto0
- * @property Collaboration $idCollaboration0
- * @property Event $idEvent0
- * @property User $idUserReceiver0
- * @property User $idUserSender0
+ * @property Photo $photo
+ * @property Collaboration $collaboration
+ * @property Event $event
+ * @property User $userReceiver
+ * @property User $userSender
  */
 class Messages extends \yii\db\ActiveRecord
 {

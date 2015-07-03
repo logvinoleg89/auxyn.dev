@@ -29,10 +29,10 @@ use modules\user\models\User;
  * @property Download[] $downloads
  * @property Popular[] $populars
  * @property Recommended[] $recommendeds
- * @property Video $idVideo
- * @property Audio $idAudio
- * @property Lyrics $idLyrics
- * @property User $idUser0
+ * @property Video $video
+ * @property Audio $audio
+ * @property Lyrics $lyrics
+ * @property User $user
  */
 class Track extends \yii\db\ActiveRecord
 {

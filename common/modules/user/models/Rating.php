@@ -14,8 +14,8 @@ use modules\user\models\User;
  * @property integer $idUserBand
  * @property string $ratingAmount
  *
- * @property User $idUserBand0
- * @property User $idUser0
+ * @property User $userBand
+ * @property User $user
  */
 class Rating extends ActiveRecord
 {

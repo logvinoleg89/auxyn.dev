@@ -13,8 +13,8 @@ use modules\event\models\Event;
  * @property integer $idEvent
  * @property integer $idUser
  *
- * @property User $idUser0
- * @property Event $idEvent0
+ * @property User $user
+ * @property Event $event
  */
 class Attenders extends \yii\db\ActiveRecord
 {

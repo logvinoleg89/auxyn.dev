@@ -15,8 +15,8 @@ use modules\event\models\Event;
  * @property string $compensation
  * @property integer $status
  *
- * @property Event $idEvent0
- * @property User $idUser0
+ * @property Event $event
+ * @property User $user
  */
 class Book extends \yii\db\ActiveRecord
 {

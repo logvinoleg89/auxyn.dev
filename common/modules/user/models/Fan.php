@@ -13,8 +13,8 @@ use modules\user\models\User;
  * @property integer $idUser
  * @property integer $idUserBand
  *
- * @property User $idUserBand0
- * @property User $idUser0
+ * @property User $userBand
+ * @property User $user
  */
 class Fan extends ActiveRecord
 {

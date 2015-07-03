@@ -17,6 +17,7 @@ use modules\user\models\UserArtist;
  * @property integer $updatedAt
  *
  * @property UserArtist[] $userArtists
+ * @property Users[] $users
  */
 class Artist extends \yii\db\ActiveRecord
 {

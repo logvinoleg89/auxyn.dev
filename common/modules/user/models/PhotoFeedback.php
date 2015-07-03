@@ -16,8 +16,8 @@ use modules\user\models\PhotoFeedback;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Photo $idPhoto0
- * @property Feedback $idFeedback0
+ * @property Photo $photo
+ * @property Feedback $feedback
  */
 class PhotoFeedback extends \yii\db\ActiveRecord
 {

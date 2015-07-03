@@ -22,7 +22,7 @@ use modules\social\models\Like;
  *
  * @property SocialRelations[] $socialRelations
  * @property Track[] $tracks
- * @property Comments[] $Comments
+ * @property Comments[] $comments
  * @property Likes[] $likes
  * @property Share[] $share
  */

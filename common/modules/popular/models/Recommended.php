@@ -15,9 +15,9 @@ use modules\track\models\Track;
  * @property integer $idTrack
  * @property string $amount
  *
- * @property Track $idTrack0
- * @property User $idUserBand0
- * @property User $idUser0
+ * @property Track $idtrack
+ * @property User $iduserband
+ * @property User $iduser
  */
 class Recommended extends \yii\db\ActiveRecord
 {

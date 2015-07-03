@@ -16,7 +16,7 @@ use modules\user\models\User;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property User $idUser0
+ * @property User $user
  */
 class BandMember extends \yii\db\ActiveRecord
 {

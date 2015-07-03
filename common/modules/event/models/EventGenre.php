@@ -16,8 +16,8 @@ use modules\event\models\Event;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Genre $idGenre0
- * @property Event $idEvent0
+ * @property Genre $genre
+ * @property Event $event
  */
 class EventGenre extends \yii\db\ActiveRecord
 {

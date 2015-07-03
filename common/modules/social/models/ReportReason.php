@@ -16,8 +16,8 @@ use yii\behaviors\TimestampBehavior;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Reason $idReason
- * @property Report $idReport
+ * @property Reason $reason
+ * @property Report $report
  */
 class ReportReason extends \yii\db\ActiveRecord
 {

@@ -17,9 +17,9 @@ use modules\track\models\Track;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Track $idTrack0
- * @property User $idUserBand0
- * @property User $idUser0
+ * @property Track $track
+ * @property User $userBand
+ * @property User $user
  */
 class Block extends \yii\db\ActiveRecord
 {

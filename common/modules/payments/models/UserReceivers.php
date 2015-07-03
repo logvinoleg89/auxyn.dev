@@ -13,8 +13,8 @@ use modules\payments\models\User;
  * @property integer $idPyments
  * @property string $amount
  *
- * @property Payments $idPyments
- * @property User $idUser
+ * @property Payments $pyments
+ * @property User $user
  */
 class UserReceivers extends \yii\db\ActiveRecord
 {

@@ -16,8 +16,8 @@ use modules\photo\models\Photo;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Photo $idPhoto0
- * @property User $idUser0
+ * @property Photo $photo
+ * @property User $user
  */
 class PhotoUser extends \yii\db\ActiveRecord
 {

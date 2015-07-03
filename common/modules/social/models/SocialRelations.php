@@ -32,16 +32,16 @@ use modules\track\models\Video;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Radio $idRadio0
- * @property Audio $idAudio0
- * @property Comment $idComment0
- * @property Event $idEvent0
- * @property Like $idLike0
- * @property Lyrics $idLyrics0
- * @property Photo $idPhoto0
- * @property Share $idShare0
- * @property Timeline $idTimeline0
- * @property Video $idVideo0
+ * @property Radio $radio
+ * @property Audio $audio
+ * @property Comment $comment
+ * @property Event $event
+ * @property Like $like
+ * @property Lyrics $lyrics
+ * @property Photo $photo
+ * @property Share $share
+ * @property Timeline $timeline
+ * @property Video $video
  */
 class SocialRelations extends \yii\db\ActiveRecord
 {

@@ -20,7 +20,7 @@ use yii\behaviors\TimestampBehavior;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property User $idUser
+ * @property User $user
  * @property SocialRelations[] $socialRelations
  * @property Video[] $video
  * @property Lyrics[] $lyrics

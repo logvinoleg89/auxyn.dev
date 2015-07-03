@@ -18,6 +18,10 @@ use modules\social\models\Share;
  *
  * @property RadioGenres[] $radioGenres
  * @property SocialRelations[] $socialRelations
+ * @property Comments[] $Comments
+ * @property Likes[] $likes
+ * @property Genres[] $Genres
+ * @property Shares[] $Shares
  */
 class Radio extends \yii\db\ActiveRecord
 {

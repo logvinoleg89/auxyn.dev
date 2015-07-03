@@ -23,6 +23,9 @@ use modules\user\models\UserGenre;
  * @property EventGenre[] $eventGenres
  * @property RadioGenres[] $radioGenres
  * @property UserGenre[] $userGenres
+ * @property Users[] $users
+ * @property Radios[] $radios
+ * @property Events[] $events
  */
 class Genre extends \yii\db\ActiveRecord
 {

@@ -17,7 +17,7 @@ use modules\user\models\User;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property User $idUser
+ * @property User $user
  */
 class Settings extends \yii\db\ActiveRecord
 {

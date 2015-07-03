@@ -15,7 +15,7 @@ use modules\user\models\User;
  * @property integer $status
  * @property integer $read
  *
- * @property User $idUser0
+ * @property User $user
  */
 class Notification extends ActiveRecord
 

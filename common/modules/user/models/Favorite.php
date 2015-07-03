@@ -13,8 +13,8 @@ use modules\user\models\User;
  * @property integer $idUserFollower
  * @property integer $idUserFollowing
  *
- * @property User $idUserFollowing
- * @property User $idUserFollower
+ * @property User $userFollowing
+ * @property User $userFollower
  */
 class Favorite extends ActiveRecord
 {

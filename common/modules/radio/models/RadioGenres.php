@@ -13,8 +13,8 @@ use modules\radio\models\Radio;
  * @property integer $idGenre
  * @property integer $idRadio
  *
- * @property Genre $idGenre0
- * @property Radio $idRadio0
+ * @property Genre $genre
+ * @property Radio $radio
  */
 class RadioGenres extends \yii\db\ActiveRecord
 {

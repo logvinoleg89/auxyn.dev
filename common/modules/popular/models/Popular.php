@@ -12,7 +12,7 @@ use modules\track\models\Track;
  * @property integer $idTrack
  * @property string $amount
  *
- * @property Track $idTrack0
+ * @property Track $track
  */
 class Popular extends \yii\db\ActiveRecord
 {
