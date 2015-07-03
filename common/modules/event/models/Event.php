@@ -5,7 +5,7 @@ namespace modules\event\models;
 use Yii;
 use yii\behaviors\TimestampBehavior;
 use modules\user\models\User;
-use modules\event\models\Attenders;
+use modules\event\models\Attender;
 use modules\event\models\Book;
 use modules\event\models\EventGenre;
 use modules\event\models\Review;
@@ -34,7 +34,7 @@ use modules\social\models\Share;
  * @property integer $isPublic
  * @property string $type
  *
- * @property Attenders[] $attenders
+ * @property Attender[] $attender
  * @property Book[] $books
  * @property User $user
  * @property EventGenre[] $eventGenres
@@ -109,7 +109,7 @@ class Event extends \yii\db\ActiveRecord
      */
     public function getAttenders()
     {
-        return $this->hasMany(Attenders::className(), ['idEvent' => 'id']);
+        return $this->hasMany(Attender::className(), ['idEvent' => 'id']);
     }
 
     /**

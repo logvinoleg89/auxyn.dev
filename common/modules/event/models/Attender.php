@@ -7,7 +7,7 @@ use modules\user\models\User;
 use modules\event\models\Event;
 
 /**
- * This is the model class for table "{{%attenders}}".
+ * This is the model class for table "{{%attender}}".
  *
  * @property integer $id
  * @property integer $idEvent
@@ -16,14 +16,14 @@ use modules\event\models\Event;
  * @property User $user
  * @property Event $event
  */
-class Attenders extends \yii\db\ActiveRecord
+class Attender extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return '{{%attenders}}';
+        return '{{%attender}}';
     }
 
     /**

@@ -8,7 +8,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
-use modules\event\models\Attenders;
+use modules\event\models\Attender;
 use modules\user\models\BandMember;
 use modules\social\models\Block;
 use modules\event\models\Book;
@@ -65,7 +65,7 @@ use modules\vocabulary\models\Genre;
  * @property integer $createdAt
  * @property integer $updatedAt
  *
- * @property Attenders[] $attenders
+ * @property Attender[] $attender
  * @property BandMember[] $bandMembers
  * @property Block[] $bandBlocks
  * @property Block[] $userBlocks
@@ -345,7 +345,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getAttenders()
     {
-        return $this->hasMany(Attenders::className(), ['idUser' => 'id']);
+        return $this->hasMany(Attender::className(), ['idUser' => 'id']);
     }
 
     /**
