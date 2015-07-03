@@ -39,6 +39,14 @@ angular.module('myApp').config(['$ocLazyLoadProvider' ,function ($ocLazyLoadProv
                 'js/map/MapModule.js',
                 'js/map/controllers/MapIndexCtrl.js',
             ]
+        },{
+            name: 'myApp.satellizer',
+            serie: true,
+            files: [
+                'js/satellizer/SatellizerModule.js',
+                'js/satellizer/config/satellizerConfig.js',
+                'js/satellizer/controllers/SatellizerLoginCtrl.js',
+            ]
         },
 
         // ------
@@ -54,6 +62,11 @@ angular.module('myApp').config(['$ocLazyLoadProvider' ,function ($ocLazyLoadProv
             name: 'ngMap',
             files: [
                 '//rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js',
+            ]
+        },{
+            name: 'satellizer',
+            files: [
+                'vendor/satellizer/satellizer.min.js',
             ]
         }]
     });

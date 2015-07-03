@@ -13,6 +13,19 @@ angular.module('myApp').config([
             templateUrl: modulesPath + '/site/views/main.html'
         })
         
+        .state('/auth/foursquare', {
+            url: '/auth/foursquare',
+            templateUrl: modulesPath + '/satellizer/views/login.html',
+            controller: 'SatellizerLoginCtrl',
+            resolve: {
+                lazy: ['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load([
+                        'myApp.satellizer'
+                    ]);
+                }]
+            }
+        })
+        
         .state('/testload', {
             url: '/testload',
             templateUrl: modulesPath + '/testload/views/index.html',
