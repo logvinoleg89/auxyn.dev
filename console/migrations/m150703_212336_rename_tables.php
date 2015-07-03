@@ -9,11 +9,13 @@ class m150703_212336_rename_tables extends Migration
     {
         $this->renameTable('attenders', 'attender');
         $this->renameTable('messages', 'message');
+        $this->renameTable('payments', 'payment');
     }
 
     public function down()
     {
        $this->renameTable('attender', 'attenders');
        $this->renameTable('message', 'messages');
+       $this->renameTable('payment', 'payments');
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace modules\payments\models;
+namespace modules\payment\models;
 
 use Yii;
-use modules\payments\models\Payments;
-use modules\payments\models\User;
+use modules\payment\models\Payment;
+use modules\payment\models\User;
 /**
  * This is the model class for table "{{%userReceivers}}".
  *
@@ -13,7 +13,7 @@ use modules\payments\models\User;
  * @property integer $idPyments
  * @property string $amount
  *
- * @property Payments $pyments
+ * @property Payment $pyments
  * @property User $user
  */
 class UserReceivers extends \yii\db\ActiveRecord
@@ -43,10 +43,10 @@ class UserReceivers extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('user', 'ID'),
-            'idUser' => Yii::t('user', 'Id User'),
-            'idPyments' => Yii::t('user', 'Id Pyments'),
-            'amount' => Yii::t('user', 'Amount'),
+            'id' => Yii::t('payment', 'ID'),
+            'idUser' => Yii::t('payment', 'Id User'),
+            'idPyments' => Yii::t('payment', 'Id Pyments'),
+            'amount' => Yii::t('payment', 'Amount'),
         ];
     }
 
@@ -55,7 +55,7 @@ class UserReceivers extends \yii\db\ActiveRecord
      */
     public function getPyment()
     {
-        return $this->hasOne(Payments::className(), ['id' => 'idPyments']);
+        return $this->hasOne(Payment::className(), ['id' => 'idPyments']);
     }
 
     /**

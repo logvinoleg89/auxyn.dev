@@ -22,8 +22,8 @@ return [
         'popular' => [
             'class' => 'modules\popular\module',
         ],
-        'payments' => [
-            'class' => 'modules\payments\module',
+        'payment' => [
+            'class' => 'modules\payment\module',
         ],
         'message' => [
             'class' => 'modules\message\module',

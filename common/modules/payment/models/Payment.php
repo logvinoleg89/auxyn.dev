@@ -1,13 +1,13 @@
 <?php
 
-namespace modules\payments\models;
+namespace modules\payment\models;
 
 use Yii;
 use modules\user\models\User;
 use modules\user\models\UserReceivers;
 
 /**
- * This is the model class for table "{{%payments}}".
+ * This is the model class for table "{{%payment}}".
  *
  * @property integer $id
  * @property string $amount
@@ -20,14 +20,14 @@ use modules\user\models\UserReceivers;
  * @property UserReceivers[] $userReceivers
  * @property ReceiverUsers[] $receiverUsers
  */
-class Payments extends \yii\db\ActiveRecord
+class Payment extends \yii\db\ActiveRecord
 {
     /**
      * @inheritdoc
      */
     public static function tableName()
     {
-        return '{{%payments}}';
+        return '{{%payment}}';
     }
 
     /**
@@ -48,12 +48,12 @@ class Payments extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => Yii::t('payments', 'ID'),
-            'amount' => Yii::t('payments', 'Amount'),
-            'idUserSender' => Yii::t('payments', 'Id User Sender'),
-            'transactionId' => Yii::t('payments', 'Transaction ID'),
-            'status' => Yii::t('payments', 'Status'),
-            'description' => Yii::t('payments', 'Description'),
+            'id' => Yii::t('payment', 'ID'),
+            'amount' => Yii::t('payment', 'Amount'),
+            'idUserSender' => Yii::t('payment', 'Id User Sender'),
+            'transactionId' => Yii::t('payment', 'Transaction ID'),
+            'status' => Yii::t('payment', 'Status'),
+            'description' => Yii::t('payment', 'Description'),
         ];
     }
 

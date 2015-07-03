@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\payments;
+namespace modules\payment;
 
 class module extends \common\overrides\base\Module
 {

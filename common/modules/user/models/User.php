@@ -23,7 +23,7 @@ use modules\user\models\Feedback;
 use modules\social\models\Like;
 use modules\message\models\Message;
 use modules\user\models\Notification;
-use modules\payments\models\Payments;
+use modules\payment\models\Payment;
 use modules\user\models\PhotoUser;
 use modules\user\models\Rating;
 use modules\popular\models\Recommended;
@@ -36,7 +36,7 @@ use modules\track\models\Track;
 use modules\photo\models\Photo;
 use modules\user\models\UserArtist;
 use modules\user\models\UserGenre;
-use modules\payments\models\UserReceivers;
+use modules\payment\models\UserReceivers;
 use modules\vocabulary\models\Artist;
 use modules\vocabulary\models\Genre;
 
@@ -84,7 +84,7 @@ use modules\vocabulary\models\Genre;
  * @property Message[] $receiverMessages
  * @property Messages[] $senderMessages
  * @property Notification[] $notifications
- * @property Payments[] $payments
+ * @property Payment[] $payment
  * @property PhotoUser[] $photoUsers
  * @property Rating[] $bandRatings
  * @property Rating[] $userRatings
@@ -497,7 +497,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getOutgoingPayments()
     {
-        return $this->hasMany(Payments::className(), ['idUserSender' => 'id']);
+        return $this->hasMany(Payment::className(), ['idUserSender' => 'id']);
     }
 
     /**
@@ -649,7 +649,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public function getIncomingPyments()
     {
-        return $this->hasMany(Payments::className(), ['id' => 'idPyments'])->via('userReceivers');
+        return $this->hasMany(Payment::className(), ['id' => 'idPyments'])->via('userReceivers');
     }
 
     /**

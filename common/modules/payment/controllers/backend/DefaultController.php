@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\payments\controllers\backend;
+namespace modules\payment\controllers\backend;
 
 use yii\web\Controller;
 
