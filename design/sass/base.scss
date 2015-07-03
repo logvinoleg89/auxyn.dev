@@ -1,0 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+@import "compass/css3";
+
+
+$white: #fff;
+$button-green: #00e676;
+$green: #278327;
+$blue: #3d5193;
+$blue-hover: #314278;
+$lblue: #00abee;
+$lblue-hover: #0095cf;
+$red: #d6492f;
+$red-hover: #b43e28;
+$text-green: #4caf50;
+
+
+%font-h3 {
+  font-family: 'Myriad Pro';
+}
+
+
+body {
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* BOOTSTRAP 5 colums */
+
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+/* BOOTSTRAP 5 colums - end*/
+
+.black-link {
+    color: #333;
+    &:hover, &:focus {
+        color: $text-green;
+        text-decoration: none;
+    }
+}
+
+
+/* lp modals width */
+.modal.form {
+    padding-right: 0 !important;
+}
+.modal.form .modal-dialog {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    .modal-content {
+        padding-bottom: 30px;
+    }
+}
+
+/* colors class */
+
+.green-text {
+    color: $text-green;
+}

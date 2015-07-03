@@ -1,0 +1,87 @@
+/* ==== CUSTOMS cols ===== */
+
+@media (min-width: 768px) {
+    .col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+/* ====== end CUSTOMS COLS ===== */
+
+/* ======= START SITE MEDIA ==== */
+
+@media (max-width: 768px) {
+  .wrap .footer {
+    max-width: 800px;
+    float: none;
+    margin-top: 30px;
+    text-align: center;
+    margin: 30px auto;
+    .col-sm-3 {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    .container.main {
+      & .logo {
+        margin-top: 15px;
+        width: 90%;
+        background-size: contain;
+        .login {
+          margin-top: 100%;
+          margin-bottom: 50%;
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 480px) {
+    .wrap .container.foot .footer {
+        float: none;
+        max-width: none;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+  .wrap .container.sing-up {
+    max-width: 280px;
+    padding-left: 15px !important;
+    .form-horizontal {
+      max-width: 250px;
+      h3 {
+        font-size: 20px;
+      }
+      .form-group {
+        margin-bottom: 0;
+      }
+      .social {
+        padding: 0;
+      }
+
+    }
+  }
+  .wrap .container.foot .footer {
+    margin: 0;
+  }
+}

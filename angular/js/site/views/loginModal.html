@@ -1,0 +1,38 @@
+<div class="modal-content">
+    <div class="modal-header">
+        <span>Welcome Back To</span>
+        <img src="img/logo.png" alt="">
+    </div>
+
+    <div class="modal-body">
+        <form name="loginForm" class="search-wrapper" ng-submit="login();
+                submitted = true" novalidate>        
+            <div class="form-group">
+                <input ng-class="{'error': (submitted && (loginForm.email.$error.required) )}" data-ng-model="model.email" name="email"  type="email" placeholder="Email" required tabindex="1">
+                <span style="color:red">                    
+                    <span ng-show="submitted && loginForm.email.$error.email">Invalid email address.</span>
+                    <span ng-show="loginForm.email.$invalid">{{errors.email}}</span>                    
+                </span>
+
+            </div>
+            <a ui-sref="root.forgot" class="forgot" ng-click="$dismiss()">Forgot password?</a>
+            <div class="form-group">
+                <input ng-class="{'error': (submitted && loginForm.password.$error.required)}" data-ng-model="model.password" name="password" type="password" placeholder="Password" required tabindex="2">
+                <span style="color:red">                   
+                    <span ng-show="loginForm.password.$invalid">{{errors.password}}</span>            
+                </span>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input ng-model="model.rememberMe" type="checkbox"  ng-true-value="1" ng-false-value="0"><div class="custom-checkbox"></div> Remember me
+                </label>
+            </div>
+            <button type="submit" class="submit">Log In</button>
+        </form>
+
+    </div>
+    <div class="modal-footer">
+        <a ui-sref="root.register.step1" ng-click="$dismiss()" class="registration-redirect">Don’t have an account?</a>
+    </div>
+</div>

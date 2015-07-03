@@ -1,0 +1,62 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API for Auxyn project.",
+        "version": "1.0.0",
+        "title": "Auxyn API"
+    },
+    "basePath": "/api/v1",
+    "tags": [
+        {
+            "name": "user",
+            "description": "Everything about user entity"
+        }, {
+            "name": "musician",
+            "description": "Everything related to musician role"
+        }, {
+            "name": "listener",
+            "description": "Everything related to listener role"
+        }, {
+            "name": "track",
+            "description": "Everything about track entity"
+        }, {
+            "name": "collaboration",
+            "description": "Everything about track entity"
+        }, {
+            "name": "event",
+            "description": "Everything about track entity"
+        }
+    ],
+    "schemes": ["http", "https"],
+    "paths": {
+    },
+    "securityDefinitions": {
+        "Error":{
+            "type": "object",
+            "properties": {
+                "result": {
+                    "type" : "object"
+                },
+                "code": {
+                    "type" : "string"
+                }
+            }
+        },
+        "User": {
+            "type": "object",
+            "properties": {
+                "auth_token": {
+                    "type" : "string"
+                },
+                "user_id": {
+                    "type" : "integer"
+                },
+                "name": {
+                    "type" : "string"
+                }
+            }
+        }
+    },
+    "definitions": {
+    }
+}

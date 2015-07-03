@@ -1,0 +1,42 @@
+<div class="btn-group pull-right">
+    <a class="btn btn-primary" ng-href="post/{{post.id}}/edit"><span class="glyphicon glyphicon-edit"></span></a>
+    <a class="btn btn-danger" ng-href="post/{{post.id}}/delete"><span class="glyphicon glyphicon-remove"></span></a>
+</div>
+<h1>{{post.title}}</h1>
+<h5 class="sub-header">Author - {{post.author.username}}. Updated - {{post.updated_at}}</h5>
+
+<div ng-bind-html="post.content"></div>
+
+<p></p>
+<div class="badge badge-important">{{post.tags}}</div>
+
+<hr>
+<ul ng-show="post.comments" class="list-group">
+    Comments:
+    <li ng-repeat="comment in post.comments | orderBy:'id' : true" class="list-group-item am-fade-and-scale">
+
+        <strong>{{comment.created_at}}</strong>
+
+        <button class="btn btn-danger btn-xs" ng-click="deleteComment(comment)">
+            <span class="glyphicon glyphicon-remove"></span>
+        </button>
+
+        <hr>
+        <div ng-bind-html="comment.content"></div>
+    </li>
+</ul>
+
+<a ng-hide="post.comments" href="post/{{post.id}}?expand=comments">show comments</a>
+
+<hr>
+
+<h4>New comment</h4>
+<div class="form-group">
+    <textarea class="form-control" ng-model="post.comment.content"></textarea>
+</div>
+<button class="btn" ng-click="addComment()">Add comment</button>
+<hr>
+<details>
+    <summary>JSON DATA</summary>
+    <pre>{{post | json}}</pre>
+</details>

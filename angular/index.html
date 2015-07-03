@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <base href="/"/>
+    <meta charset="utf-8">
+    <meta name="fragment" content="!"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Angular App</title>
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="vendor/angular/angular-csp.css">
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/angular-motion/dist/angular-motion.min.css">
+    <link rel="stylesheet" href="vendor/AngularJS-Toaster/toaster.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+    <body class="ng-cloak" style="overflow-y: scroll">
+
+        <!--[if lte IE 9]>
+        <p class="browsehappy">
+            Похоже, вы используете <strong>устаревшую версию</strong> Internet Explorer. <a href="http://browsehappy.com/">Обновите
+            свой браузер</a>.
+        </p>
+        <![endif]-->
+        
+        <div class="navbar navbar-default" role="navigation" bs-navbar>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AppLogo</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="/testload">Test Load</a></li>
+                    <li><a ui-sref="/map">Map</a></li>
+                    <li><a ui-sref="/post/published">Post (Published)</a></li>
+                    <li><a ui-sref="/post/draft">Post (Draft)</a></li>
+                    <li login></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container view-animate-container">
+            <!--<div ui-view="lazyLoadView" class="am-fade-and-slide-top">-->
+            <div ui-view></div>
+        </div>
+
+        <toaster-container toaster-options="{'position-class': 'toast-top-right'}"></toaster-container>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=weather,visualization,panoramio"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="vendor/angular/angular.js"></script>
+        <script src="vendor/angular-i18n/angular-locale_ru.js"></script>
+        <script src="vendor/angular-animate/angular-animate.min.js"></script>
+        <script src="vendor/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="vendor/angular-sanitize/angular-sanitize.js"></script>
+        <script src="vendor/AngularJS-Toaster/toaster.js"></script>
+        <script src="vendor/angular-bootstrap/ui-bootstrap.min.js"></script>
+        <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <!--<script src="vendor/angular-strap/dist/angular-strap.js"></script>-->
+        <!--<script src="vendor/angular-strap/dist/angular-strap.tpl.min.js"></script>-->
+        <script src="js/app.js"></script>
+
+        <!-- route -->
+        <script src="js/common/config/route.js"></script>
+
+        <!-- ocLazy -->
+        <script src="vendor/ocLazyLoad/dist/ocLazyLoad.js"></script>
+        <script src="js/common/ocLazy/ocLazyConfig.js"></script>
+
+        <!-- acl config -->
+        <script src="js/common/acl/aclConfig.js"></script>
+        <script src="vendor/acl/angular-acl.js"></script>
+
+        <!-- services -->
+        <script src="js/common/services/rest.js"></script>
+        <script src="js/common/services/authInterceptor.js"></script>
+        <script src="js/common/services/loginModal.js"></script>
+
+        <!-- directives -->
+        <script src="js/common/directives/login.js"></script>
+
+        <!-- filters -->
+        <script src="js/common/filters/checkmark.js"></script>
+        
+    </body>
+</html>

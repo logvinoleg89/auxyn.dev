@@ -1,0 +1,501 @@
+body {
+  padding-right: 0 !important;
+}
+.modal-open {
+  overflow: inherit;
+}
+.wrap {
+  padding: 0;
+  width: 100%;
+  .container.main {
+    padding: 0;
+    display: block;
+  	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	top: -20px;
+  	left: 0;
+  	z-index: 10;
+  	background: url(../img/bg-gradient.jpg) center top no-repeat;
+  	background-size: cover;
+    .logo {
+      padding: 0;
+      background: url(../img/logo.png) center top no-repeat;;
+      height: 100%;
+      margin-top: 50px;
+      text-align: center;
+      .login {
+        width: 100%;
+        max-width: 330px;
+        margin-top: 500px;
+        margin-bottom: 300px;
+        .btn-login {
+          height: 100px;
+          padding: 0;
+          button {
+            bottom: 0;
+            background: transparent;
+            border: 0;
+            color: $white;
+            padding: 10px 30px;
+            border-radius: 0;
+            border-top: 1px solid $white;
+            border-bottom: 1px solid $white;
+            outline: none;
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            &:hover {
+              border-color: $green;
+              color: $green;
+              transition: all 0.4s ease-out 0s;
+            }
+
+          }
+          .note-1 {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background: url(../img/note-1.png) center top no-repeat;
+            background-position: 25px 25px;
+            background-color: $button-green;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+
+          }
+          .note-2 {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background: url(../img/note-2.png) center top no-repeat;
+            background-position: 25px 25px;
+            background-color: $button-green;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+
+          }
+        }
+
+      }
+    }
+  }
+  .container.main-2 {
+    text-align: center;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 40;
+    .content {
+      .col-sm-1-5 {
+        height: 100%;
+        a img {
+          &:hover {
+            -webkit-animation-name: spin;
+            -webkit-animation-duration: 2000ms;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-name: spin;
+            -moz-animation-duration: 2000ms;
+            -moz-animation-iteration-count: infinite;
+            -moz-animation-timing-function: linear;
+            -ms-animation-name: spin;
+            -ms-animation-duration: 2000ms;
+            -ms-animation-iteration-count: infinite;
+            -ms-animation-timing-function: linear;
+
+            animation-name: spin;
+            animation-duration: 2000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          }
+        }
+        @-ms-keyframes spin {
+            from { -ms-transform: rotate(0deg); }
+            to { -ms-transform: rotate(360deg); }
+        }
+        @-moz-keyframes spin {
+            from { -moz-transform: rotate(0deg); }
+            to { -moz-transform: rotate(360deg); }
+        }
+        @-webkit-keyframes spin {
+            from { -webkit-transform: rotate(0deg); }
+            to { -webkit-transform: rotate(360deg); }
+        }
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+        h3 {
+          padding: 10px 0;
+          font-size: 24px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .container.foot {
+    width: 100%;
+    .footer {
+      border-top: 1px solid black;
+      width: 100%;
+      margin: 0 30px 0 0;
+      max-width: 400px;
+      padding: 15px 10px 0 0;
+      float: right;
+      margin-top: 30px;
+      text-align: left;
+      margin-bottom: 30px;
+      .col-sm-9 {
+        padding: 0;
+      }
+      .col-sm-3 {
+        padding: 0;
+      }
+      p {
+        font-size: 12px;
+          a {
+              color: #333;
+              &:hover, &:focus {
+                  text-decoration: none;
+                  color: #278327;
+              }
+          }
+      }
+    }
+  }
+
+  .sing-in {
+    .form-horizontal {
+
+      p {
+        padding: 15px 0;
+        text-align: right;
+        font-size: 12px;
+        margin: 0;
+      }
+      .thank {
+        text-align: center;
+      }
+      .black-link {
+        float: right;
+        margin-bottom: 30px;
+      }
+      .social {
+        p {
+          text-align: center;
+        }
+      }
+      .sing-up {
+        background-color: $green;
+          &:hover {
+              background-color: $button-green !important;
+          }
+      }
+    }
+  }
+  .sing-up {
+    label {
+      font-size: 16px;
+    }
+    .form-horizontal {
+      max-width: 320px;
+      margin: 0 auto;
+      h3 {
+        font-size: 24px;
+        text-align: center;
+        color: $text-green;
+        font-weight: 700;
+      }
+      .form-element-1 {
+        margin-bottom: 0;
+      }
+      .terms {
+        text-align: center;
+        padding: 0 15px;
+        p {
+          font-size: 14px;
+          padding: 15px 0;
+          margin: 0;
+        }
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+      & .control-label {
+        padding: 7px 15px;
+        text-align: left;
+        font-weight: 400;
+        white-space: nowrap;
+        a {
+          float: right;
+          color: $text-green;
+        }
+      }
+      & .form-control {
+        max-width: 320px;
+        height: 40px;
+        border-radius: 8px;
+      }
+      .col-sm-offset-2 {
+        margin: 0 auto;
+        text-align: center;
+        .sing-up, .sing-in {
+          width: 100%;
+          max-width: 320px;
+          background-color: $button-green;
+          border-radius: 8px;
+          border: none;
+          font-size: 18px;
+          height: 40px;
+          color: white;
+          font-weight: 700;
+          &:hover {
+            background-color: $green;
+            transition: all 0.4s ease-out 0s;
+          }
+        }
+        .sing-up {
+          background-color: $button-green;
+        }
+        .sing-up-2 {
+          border-radius: 8px;
+          width: 100%;
+          max-width: 300px;
+          height: 40px;
+          font-size: 18px;
+          color: $white;
+          font-weight: 700;
+          border: none;
+          background-color: $green;
+          &:hover {
+            transition: all 0.4s ease-out 0s;
+            background-color: $button-green;
+          }
+        }
+        .send-pass {
+          margin-top: 20px;
+          background-color: $button-green;
+          &:hover {
+            background-color: $green ;
+            transition: all 0.4s ease-out 0s;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      .info {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+        padding: 0 !important;
+        p {
+          color: $text-green;
+          a {
+            color: $text-green;
+            text-decoration: underline;
+          }
+        }
+      }
+      .social {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        font-size: 12px;
+        p {
+          padding: 15px 0;
+          font-weight: 700;
+        }
+        ul {
+          display: block;
+          padding-left: 0;
+          margin:0;
+          li {
+            display: inline-block;
+            i {
+              margin: 0 5px;
+              font-size: 50px;
+              color: $white;
+              border-radius: 50%;
+              width: 60px;
+              height: 60px;
+            }
+            .fa-facebook {
+              background-color: $blue;
+              padding: 14px 20px;
+              &:hover {
+                background-color: $blue-hover;
+              }
+            }
+            .fa-twitter {
+              background-color: $lblue;
+              padding: 16px 15px;
+              font-size: 34px;
+              top: -12px;
+              position: relative;
+              &:hover {
+                background-color: $lblue-hover;
+              }
+            }
+            .fa-google-plus {
+              background-color: $red;
+              padding: 14px 0;
+              &:hover {
+                background-color: $red-hover;
+              }
+            }
+          }
+        }
+        hr {
+          position: relative;
+          width: 398px;
+          margin-top: 10px;
+          left: -64px;
+          height: 1px;
+          background-color: #d9d9d9;
+        }
+        .col-xs-1, .col-xs-10 {
+          padding: 0;
+        }
+
+        .hr-left {
+          hr {
+            width: 100px;
+            left: -64px;
+            top: 14px;
+          }
+        }
+        .hr-right {
+          hr {
+            left: -14px;
+            width: 100px;
+            position: relative;
+            top: 14px;
+          }
+        }
+      }
+    }
+
+  }
+  .form-main-module {
+    max-width: 410px;
+    margin-right: auto;
+    margin-left: auto;
+    .module-forgot-password {
+      p {
+        padding: 10px 0 0 0;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+
+
+.radio-emulation {
+  white-space: nowrap;
+  input {
+    display: none;
+    &:checked {
+      + label {
+        span {
+          &::after {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  label {
+      padding: 0;
+    span {
+      width: 14px;
+      height: 14px;
+      @include border-radius(50%);
+      background: $white;
+      border: 1px solid $text-green;
+      position: relative;
+      padding: 0;
+      min-height: 0;
+      min-width: none;
+      display: inline-block;
+      margin-right: 5px;
+      &:after {
+          content: " ";
+          width: 8px;
+          height: 8px;
+          display: inline-block;
+          background: $text-green;
+          border-color: $text-green;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+              display: none;
+          @include border-radius(50%);
+
+      }
+    }
+  }
+}
+
+
+
+/* animations */
+
+@-webkit-keyframes pulse_animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.1); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@keyframes pulse_animation {
+	0% { -webkit-transform: scale(1); }
+	30% { -webkit-transform: scale(1); }
+	40% { -webkit-transform: scale(1.1); }
+	50% { -webkit-transform: scale(1); }
+	60% { -webkit-transform: scale(1); }
+	70% { -webkit-transform: scale(1.05); }
+	80% { -webkit-transform: scale(1); }
+	100% { -webkit-transform: scale(1); }
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+@keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+.sign-up-animation:hover, .sign-in-animation:hover {
+    span {
+        -webkit-animation-name: 'pulse_animation';
+        -webkit-animation-duration: 500ms;
+        -webkit-transform-origin:90% 90%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-name: 'pulse_animation';
+        animation-duration: 800ms;
+        transform-origin:90% 90%;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}

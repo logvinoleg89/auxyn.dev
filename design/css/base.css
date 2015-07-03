@@ -1,0 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
+body {
+  outline: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* BOOTSTRAP 5 colums */
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+
+/* BOOTSTRAP 5 colums - end*/
+.black-link {
+  color: #333;
+}
+.black-link:hover, .black-link:focus {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* lp modals width */
+.modal.form {
+  padding-right: 0 !important;
+}
+
+.modal.form .modal-dialog {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal.form .modal-dialog .modal-content {
+  padding-bottom: 30px;
+}
+
+/* colors class */
+.green-text {
+  color: #4caf50;
+}
