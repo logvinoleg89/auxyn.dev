@@ -143,7 +143,8 @@ class User extends ActiveRecord implements IdentityInterface
     public function rules()
     {
         return [
-            [['name', 'token', 'passwordHash', 'email', 'createdAt', 'updatedAt'], 'required'],
+//            [['name', 'token', 'passwordHash', 'email', 'createdAt', 'updatedAt'], 'required'],
+            [['name', 'token', 'email', 'createdAt', 'updatedAt'], 'required'],
             [['mainPhoto', 'role', 'status', 'createdAt', 'updatedAt'], 'integer'],
             [
                 [
@@ -183,6 +184,8 @@ class User extends ActiveRecord implements IdentityInterface
             'id' => Yii::t('user', 'ID'),
             'name' => Yii::t('user', 'Name'),
             'token' => Yii::t('user', 'Token'),
+            'provider' => Yii::t('user', 'Provider'),
+            'idProvider' => Yii::t('user', 'Id Proveder'),
             'passwordHash' => Yii::t('user', 'Password Hash'),
             'passwordResetToken' => Yii::t('user', 'Password Reset Token'),
             'email' => Yii::t('user', 'Email'),

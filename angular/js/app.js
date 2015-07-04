@@ -2,8 +2,6 @@ var app = angular.module('myApp', ['acl', 'ui.router', 'ngAnimate', 'toaster', '
 
 //app.run(function ($rootScope, $state, $stateParams, Acl, $timeout, Helper, LoginModal, User) {
 app.run(function ($rootScope, $state, $stateParams, Acl, $timeout, LoginModal) {
-// It's very handy to add references to $state and $stateParams to the $rootScope so that you can access them from any scope within your applications.For example,
-// <li ng-class="{ active: $state.includes('contacts.list') }"> will set the <li> to active whenever 'contacts.list' or one of its decendents is active.
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
 //    $rootScope.Helper = Helper; //global helper function
@@ -53,7 +51,7 @@ app.run(function ($rootScope, $state, $stateParams, Acl, $timeout, LoginModal) {
         }
 
         console.log('toState', toState.name);
-        console.log('Acl.can', Acl.can(toState.name))
+        console.log('Acl.can', Acl.can(toState.name));
         if (!Acl.can(toState.name)) {
             event.preventDefault();
             if (Acl.isGuest()) {

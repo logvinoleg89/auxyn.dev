@@ -48,6 +48,8 @@ return [
                 ['class' => 'common\overrides\rest\UrlRule', 'controller' => ['v1/user']],
                 'OPTIONS v1/user/login' => 'v1/user/login',
                 'POST v1/user/login' => 'v1/user/login',
+                'GET v1/user/sign-up' => 'v1/user/sign-up',
+                'POST v1/user/oauth-facebook' => 'v1/user/oauth-facebook',
             ],
         ],
     ],

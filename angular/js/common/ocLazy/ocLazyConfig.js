@@ -66,7 +66,8 @@ angular.module('myApp').config(['$ocLazyLoadProvider' ,function ($ocLazyLoadProv
         },{
             name: 'satellizer',
             files: [
-                'vendor/satellizer/satellizer.min.js',
+                'vendor/satellizer/satellizer.js',
+//                'vendor/satellizer/satellizer.min.js',
             ]
         }]
     });

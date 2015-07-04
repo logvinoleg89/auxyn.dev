@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "*",
         "yiisoft/yii2-swiftmailer": "*",
         "duccio/apns-php" : "dev-master",
-        "bryglen/yii2-apns-gcm": "1.0.1"
+        "bryglen/yii2-apns-gcm": "1.0.1",
+        "linslin/yii2-curl": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

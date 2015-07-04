@@ -2,7 +2,11 @@ angular.module('myApp.satellizer')
     .config(function($authProvider) {
 
         $authProvider.facebook({
-          clientId: '624059410963642'
+          clientId: '1618806771733580',
+    //      redirectUri: window.location.origin || window.location.protocol + '//' + window.location.host,
+//          url: "http://auxyn.dev/backend/oauth"
+          url: "api/v1/user/oauth-facebook"
+//          url: "frontend/site/qwe"
         });
 
         $authProvider.google({
@@ -14,10 +18,10 @@ angular.module('myApp.satellizer')
         });
 
         $authProvider.oauth2({
-          name: 'foursquare',
-          url: '/auth/foursquare',
-          redirectUri: window.location.origin,
-          clientId: 'MTCEJ3NGW2PNNB31WOSBFDSAD4MTHYVAZ1UKIULXZ2CVFC2K',
-          authorizationEndpoint: 'https://foursquare.com/oauth2/authenticate',
+            name: 'foursquare',
+            url: '/auth/foursquare',
+            clientId: 'MTCEJ3NGW2PNNB31WOSBFDSAD4MTHYVAZ1UKIULXZ2CVFC2K',
+            redirectUri: window.location.origin || window.location.protocol + '//' + window.location.host,
+            authorizationEndpoint: 'https://foursquare.com/oauth2/authenticate'
         });
     });
